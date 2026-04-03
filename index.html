@@ -7,7 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        scroll-behavior: smooth;
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body class="bg-stone-50 text-slate-900 font-sans">
@@ -101,19 +103,26 @@
             
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200">
                 <p class="font-medium text-slate-800 mb-2">Direct Email</p>
-                <a href="mailto:lucas@lucasleungconsulting.com" class="text-2xl font-bold text-emerald-600 hover:text-emerald-500">lucas@lucasleungconsulting.com</a>
+                <a href="mailto:lucas@lucasleungconsulting.com" class="text-xl md:text-2xl font-bold text-emerald-600 hover:text-emerald-500 break-words">
+                    lucas@lucasleungconsulting.com
+                </a>
                 <div class="mt-8 flex justify-center gap-6">
-                   <a href="https://linkedin.com/in/lucasmarkleung" target="_blank" class="text-slate-400 hover:text-emerald-600 transition text-xl">
-    <i class="fab fa-linkedin"></i>
-</a>
+                    <a href="https://linkedin.com/in/lucasmarkleung" target="_blank" class="text-slate-400 hover:text-emerald-600 transition text-xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="py-10 text-center text-xs text-slate-400 uppercase tracking-widest">
-        <p>&copy; 2026 Lucas Leung Consulting | Vancouver, BC</p>
+        <p>&copy; <span id="year"></span> Lucas Leung Consulting | Vancouver, BC</p>
     </footer>
+
+    <script>
+        // Automatically update the year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
 </body>
 </html>
