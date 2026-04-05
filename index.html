@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZG493C3XKM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZG493C3XKM');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Leung Consulting | Small Business Growth Specialist</title>
@@ -20,6 +29,7 @@
             <div class="space-x-8 hidden md:flex font-medium text-xs uppercase tracking-widest">
                 <a href="#focus" class="hover:text-emerald-600 transition">Focus</a>
                 <a href="#services" class="hover:text-emerald-600 transition">Services</a>
+                <a href="https://lucastaylorleung.substack.com/" target="_blank" class="hover:text-emerald-600 transition">Newsletter</a>
                 <a href="#contact" class="bg-emerald-600 text-white px-5 py-2 rounded-full hover:bg-emerald-700 transition">Get Started</a>
             </div>
         </div>
@@ -49,9 +59,12 @@
                     <p class="text-emerald-100 text-lg mb-4">
                         Large corporations have endless layers of bureaucracy. Small businesses have grit and a need for speed. 
                     </p>
-                    <p class="text-emerald-100/80">
+                    <p class="text-emerald-100/80 mb-6">
                         I specialize in taking the complex marketing frameworks used by giants and stripping away the fluff to make them work for teams of 1 to 50.
                     </p>
+                    <a href="https://lucastaylorleung.substack.com/" target="_blank" class="inline-flex items-center gap-2 text-emerald-400 font-bold hover:text-white transition">
+                        Read my growth strategies on Substack <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
                 </div>
                 <div class="bg-emerald-800/50 p-8 rounded-2xl border border-emerald-700">
                     <ul class="space-y-4">
@@ -107,20 +120,22 @@
                     lucas@lucasleungconsulting.com
                 </a>
                 <div class="mt-8 flex justify-center gap-6">
-                    <a href="https://linkedin.com/in/lucasmarkleung" target="_blank" class="text-slate-400 hover:text-emerald-600 transition text-xl">
+                    <a href="https://linkedin.com/in/lucasmarkleung" target="_blank" class="text-slate-400 hover:text-emerald-600 transition text-2xl" title="LinkedIn">
                         <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://lucastaylorleung.substack.com/" target="_blank" class="text-slate-400 hover:text-emerald-600 transition text-2xl" title="Substack Newsletter">
+                        <i class="fas fa-envelope-open-text"></i>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-xs text-slate-400 uppercase tracking-widest">
+    <footer class="py-10 text-center text-xs text-slate-400 uppercase tracking-widest border-t border-stone-200">
         <p>&copy; <span id="year"></span> Lucas Leung Consulting | Vancouver, BC</p>
     </footer>
 
     <script>
-        // Automatically update the year
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 
